@@ -1,11 +1,19 @@
 const { notes } = require("../models/data")
 
 const getNotes = (req,res)=>{
-    res.status(200).send(notes)
+    try{
+        res.status(200).send(notes)
+    }catch(err){
+        console.log(err, "SORRY NOTES NAHI MIL PAYENGE APKO")
+        res.status(500).send(err)
+    }
+    
 }
 
+
 const getNoteById =(req,res)=>{
-    let {id} = req.params;
+    try{
+        let {id} = req.params;
 
    let element =  notes.find(note=> note.id === Number(id))
    if(!element){
@@ -13,10 +21,15 @@ const getNoteById =(req,res)=>{
    }
 
    res.status(200).send(element)
+    }catch(err){
+        console.log(err, "SORRY NOTES NAHI MIL PAYENGE APKO")
+        res.status(500).send(err)
+    }
 }
 
 const createNote = (req,res)=>{
-    let {title,description,link,author,createdOn,note} = req.body
+    try{
+        let {title,description,link,author,createdOn,note} = req.body
 
     let newData = {
         id:notes.length +1,
@@ -31,11 +44,16 @@ const createNote = (req,res)=>{
 
     notes.push(newData);
     res.status(201).send("Note Added Successfully")
+    }catch(err){
+        console.log(err, "SORRY NOTES NAHI MIL PAYENGE APKO")
+        res.status(500).send(err)
+    }
 }
 
 
 const updateNote = (req,res)=>{
-    let {id} = req.params;
+    try{
+        let {id} = req.params;
 
     const note = notes.find(note => note.id === Number(id))
 
@@ -45,10 +63,15 @@ const updateNote = (req,res)=>{
 
     Object.assign(note,req.body)
     res.status(200).send("Note Updated")
+    }catch(err){
+        console.log(err, "SORRY NOTES NAHI MIL PAYENGE APKO")
+        res.status(500).send(err)
+    }
 }
 
 const deleteNote = (req,res)=>{
-    let {id} = req.params;
+    try{
+        let {id} = req.params;
     const note = notes.find(note=> note.id === Number(id))
 
     if(!note){
@@ -59,6 +82,10 @@ const deleteNote = (req,res)=>{
     notes.splice(index,1)
 
     res.status(200).send("Dekho woh chala gaya")
+    }catch(err){
+        console.log(err, "SORRY NOTES NAHI MIL PAYENGE APKO")
+        res.status(500).send(err)
+    }
 
 
 }
