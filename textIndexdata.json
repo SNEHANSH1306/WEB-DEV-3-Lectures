@@ -1,0 +1,186 @@
+[
+  {
+    "courseId": 101,
+    "title": "MongoDB for Beginners",
+    "description": "Learn MongoDB database basics, collections, documents, queries and CRUD operations.",
+    "instructor": "Rahul Sharma",
+    "category": "Database",
+    "tags": [
+      "MongoDB",
+      "Database",
+      "NoSQL"
+    ]
+  },
+  {
+    "courseId": 102,
+    "title": "Advanced MongoDB",
+    "description": "Learn MongoDB aggregation, indexing, text search, lookup and performance optimization.",
+    "instructor": "Amit Verma",
+    "category": "Database",
+    "tags": [
+      "MongoDB",
+      "Aggregation",
+      "Indexing"
+    ]
+  },
+  {
+    "courseId": 103,
+    "title": "JavaScript Basics",
+    "description": "Learn JavaScript variables, functions, arrays, objects, loops and basic programming concepts.",
+    "instructor": "Neha Singh",
+    "category": "Programming",
+    "tags": [
+      "JavaScript",
+      "Programming",
+      "Web"
+    ]
+  },
+  {
+    "courseId": 104,
+    "title": "Advanced JavaScript",
+    "description": "Learn advanced JavaScript concepts including promises, async await, callbacks and event loop.",
+    "instructor": "Rohit Kumar",
+    "category": "Programming",
+    "tags": [
+      "JavaScript",
+      "Async",
+      "Advanced"
+    ]
+  },
+  {
+    "courseId": 105,
+    "title": "React for Beginners",
+    "description": "Learn React components, props, state, hooks and building modern web applications.",
+    "instructor": "Priya Mehta",
+    "category": "Web Development",
+    "tags": [
+      "React",
+      "JavaScript",
+      "Frontend"
+    ]
+  },
+  {
+    "courseId": 106,
+    "title": "Full Stack Web Development",
+    "description": "Build complete web applications using React, Node.js, Express and MongoDB.",
+    "instructor": "Arjun Kapoor",
+    "category": "Web Development",
+    "tags": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB"
+    ]
+  },
+  {
+    "courseId": 107,
+    "title": "Database Management System",
+    "description": "Understand database concepts, SQL, normalization, transactions and database design.",
+    "instructor": "Sanjay Gupta",
+    "category": "Database",
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database"
+    ]
+  },
+  {
+    "courseId": 108,
+    "title": "Web Development with HTML CSS",
+    "description": "Learn HTML semantic elements, CSS selectors, Flexbox, Grid and responsive web design.",
+    "instructor": "Anjali Verma",
+    "category": "Web Development",
+    "tags": [
+      "HTML",
+      "CSS",
+      "Web"
+    ]
+  },
+  {
+    "courseId": 109,
+    "title": "Node.js Backend Development",
+    "description": "Learn Node.js, Express, REST APIs, authentication and connecting applications with MongoDB.",
+    "instructor": "Vikas Yadav",
+    "category": "Backend",
+    "tags": [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "API"
+    ]
+  },
+  {
+    "courseId": 110,
+    "title": "MERN Stack Development",
+    "description": "Build scalable web applications using MongoDB, Express, React and Node.js.",
+    "instructor": "Mohit Jain",
+    "category": "Full Stack",
+    "tags": [
+      "MERN",
+      "MongoDB",
+      "React",
+      "Node.js"
+    ]
+  },
+  {
+    "courseId": 111,
+    "title": "Python Programming",
+    "description": "Learn Python programming, variables, functions, lists, dictionaries and object oriented programming.",
+    "instructor": "Pooja Sharma",
+    "category": "Programming",
+    "tags": [
+      "Python",
+      "Programming"
+    ]
+  },
+  {
+    "courseId": 112,
+    "title": "Data Structures",
+    "description": "Learn arrays, linked lists, stacks, queues, trees and searching algorithms.",
+    "instructor": "Karan Singh",
+    "category": "Computer Science",
+    "tags": [
+      "DSA",
+      "Algorithms",
+      "Programming"
+    ]
+  },
+  {
+    "courseId": 113,
+    "title": "MongoDB Performance",
+    "description": "Improve MongoDB query performance using indexes, compound indexes and efficient queries.",
+    "instructor": "Rahul Sharma",
+    "category": "Database",
+    "tags": [
+      "MongoDB",
+      "Performance",
+      "Indexing"
+    ]
+  },
+  {
+    "courseId": 114,
+    "title": "Frontend Development",
+    "description": "Create interactive websites using HTML, CSS, JavaScript and React.",
+    "instructor": "Neha Singh",
+    "category": "Web Development",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React"
+    ]
+  },
+  {
+    "courseId": 115,
+    "title": "REST API Development",
+    "description": "Learn how to create REST APIs using Node.js and Express and connect them with MongoDB.",
+    "instructor": "Amit Verma",
+    "category": "Backend",
+    "tags": [
+      "REST",
+      "API",
+      "Express",
+      "MongoDB"
+    ]
+  }
+]
