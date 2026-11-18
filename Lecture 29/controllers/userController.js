@@ -1,6 +1,6 @@
 const userSchema = require("../models/user");
 const bcrypt = require("bcrypt")
-const jsonwebtoken = require("jsonwebtoken")
+const jwt = require("jsonwebtoken")
 
 const signup =async (req,res)=>{
     let {name,email,course,password,age} = req.body;
@@ -15,11 +15,16 @@ const signup =async (req,res)=>{
 
     let user =  await userSchema.create({name,email,course,password:hashedPassword,age})
 
-    jwt.sign(
+    let token = jwt.sign(
         {
             email:user.email
+        },
+        process.env.SECRET_KEY,
+        {
+            expiresIn:"1h"
         }
     )
+    res.cookie("token",token)
 
    res.status(201).json({
     "message":"User Created Successfully",
